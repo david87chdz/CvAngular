@@ -1,0 +1,22 @@
+app-component {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: auto 1fr; /* El header toma el tamaño de su contenido y el resto se divide entre aside y central */
+    grid-template-columns: 1fr 3fr; /* Ajusta la proporción entre aside y central según necesites */
+}
+
+app-header {
+    grid-column: 1 / -1; /* El header se extiende a través de todas las columnas */
+    grid-row: 1;
+}
+
+app-aside {
+    grid-column: 1 / 2; /* El aside ocupa la primera columna de la segunda fila */
+    grid-row: 2;
+}
+
+app-central {
+    grid-column: 2 / 3; /* El central ocupa la segunda columna de la segunda fila */
+    grid-row: 2;
+}
