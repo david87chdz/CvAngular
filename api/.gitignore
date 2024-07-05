@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# Archivo de variables de entorno
+.env
+
+# Archivos de logs
+logs/
+*.log
+
+# Archivos de compilación
+dist/
+build/
+
+
+# Archivos de respaldo y temporales
+*.bak
+*.tmp
+
+# Archivos de caché
+.cache/
+
+# Archivos de configuración específicos del usuario
+.editorconfig
+.vscode/
+
+# Archivos generados automáticamente
+npm-debug.log
+yarn-error.log
