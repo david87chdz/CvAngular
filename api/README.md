@@ -133,4 +133,4 @@ Este proyecto está licenciado bajo la [Licencia MIT](https://opensource.org/lic
 -->
 ## Contacto
 
-Si tienes preguntas o sugerencias sobre este proyecto, puedes contactarme a través de [correo electrónico](david87chdz@gmail.com) o en [GitHub](https://github.com/david87chdz).
+Si tienes preguntas o sugerencias sobre este proyecto, puedes contactarme a través de [Email](mailto:david87chdz@gmail.com) o en [GitHub](https://github.com/david87chdz).
