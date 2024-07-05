@@ -6,7 +6,7 @@ Un proyecto de ejemplo que utiliza Express y PostgreSQL para crear una API RESTf
 
 Este proyecto está actualmente en desarrollo.
 
-## Instalación
+<!-- ## Instalación
 
 Para instalar y ejecutar este proyecto localmente, sigue estos pasos:
 
@@ -130,7 +130,7 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 ## Licencia
 
 Este proyecto está licenciado bajo la [Licencia MIT](https://opensource.org/licenses/MIT).
-
+-->
 ## Contacto
 
 Si tienes preguntas o sugerencias sobre este proyecto, puedes contactarme a través de [correo electrónico](david87chdz@gmail.com) o en [GitHub](https://github.com/david87chdz).
