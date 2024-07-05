@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: david
       POSTGRES_DB: cvAngular
     volumes:
-      - db_data:/var/lib/postgresql/data
+      - ./db_data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
 volumes:
