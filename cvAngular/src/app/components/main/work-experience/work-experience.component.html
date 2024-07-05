@@ -1,1 +1,10 @@
 <p>work-experience works!</p>
+@for (exp of experience; track exp._id){
+    <div class="work-experience">
+        <h3>{{exp.title}}</h3>
+        <h4>{{exp.company}}</h4>
+        <p>{{exp.description}}</p>
+    </div>
+
+}
+    
