@@ -1,14 +1,18 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environments } from '../../environments/environments';
 
+const apiUrl = environments.apiUrl;
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class ExperienceService {
 
   constructor(private http: HttpClient) { }
 
-  getExperience() {
-    return this.http.get('http://localhost:3000/workexperience');
+  getWorkExperience() {
+    return this.http.get(`${apiUrl}/workexperience`);
   }
 }

@@ -18,7 +18,7 @@ export class WorkExperienceComponent {
   }
 
   getExperience() {
-    this.expeinceService$.getExperience().subscribe((data) => {
+    this.expeinceService$.getWorkExperience().subscribe((data) => {
       console.log(data);
       this.experience = data;
     });
