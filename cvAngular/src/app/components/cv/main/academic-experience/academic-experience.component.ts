@@ -11,7 +11,9 @@ import { ExperienceService } from '../../../../services/experience.service';
 export class AcademicExperienceComponent {
   public academicExperiences: any;
 
-  constructor(private experienceService: ExperienceService) { }
+  constructor(private experienceService: ExperienceService) {
+    this.getAcademicExperience();
+   }
 
   getAcademicExperience() {
     this.experienceService.getAcademicExperience().subscribe((data) => {
