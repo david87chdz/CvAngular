@@ -1,0 +1,12 @@
+<p>academic-experience works!</p>
+@for( exp of academicExperiences; track exp._id ) {
+    <div class="card">
+      <div class="card-header">
+        <h4>{{ exp.title }}</h4>
+      </div>
+      <div class="card-body">
+        <p>{{ exp.description }}</p>
+        <p>{{ exp.startDate }} - {{ exp.endDate }}</p>
+      </div>
+    </div>
+}

@@ -15,4 +15,8 @@ export class ExperienceService {
   getWorkExperience() {
     return this.http.get(`${apiUrl}/workexperience`);
   }
+
+  getAcademicExperience() {
+    return this.http.get(`${apiUrl}/academicexperience`);
+  }
 }
