@@ -1,1 +1,12 @@
-<p>contact works!</p>
+<h1>Contacto</h1>
+
+@for(data of contactData; track data._id){
+    <div class="contact">
+        <h3>Email: {{data.email}}</h3>
+        <p>Telefono: {{data.phone}}</p>
+        <p>Fecha de nacimiento: {{data.birth_date}}</p>
+        <p>Dirección: {{data.address}}</p>
+        <p>Linkedln:<a href="{{data.linkedln}}">{{data.linkedln}}</a></p>
+        <p>GitHub:<a href="{{data.github}}">{{data.github}}</a></p>
+    </div>
+}

@@ -1,4 +1,4 @@
-const workExperienceModel = require('../models/WorkExperience.js');
+const workExperienceModel = require('../models/WorkExperienceModel.js');
 
 exports.getAllWorkExperiences = async (req, res) => {
   try {

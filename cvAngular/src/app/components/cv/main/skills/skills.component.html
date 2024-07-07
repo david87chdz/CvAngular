@@ -1,1 +1,6 @@
-<p>skills works!</p>
+<h1>Habilidades técnicas</h1>
+@for( data of skillsData; track data._id){
+    <div class="skills">
+        <p>{{data.name}}</p>
+    </div>
+}

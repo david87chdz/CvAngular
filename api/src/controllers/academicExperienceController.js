@@ -1,4 +1,4 @@
-const academicExperienceModel = require('../models/AcademicExperience.js');
+const academicExperienceModel = require('../models/AcademicExperienceModel.js');
 
 exports.getAllAcademicExperieces = async (req, res) => {
     try{

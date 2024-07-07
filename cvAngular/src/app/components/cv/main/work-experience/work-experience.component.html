@@ -1,6 +1,8 @@
-<p>work-experience works!</p>
+<h1>Experiencia laboral</h1>
 @for (exp of experience; track exp._id){
     <div class="work-experience">
+        <h3>{{exp.position | uppercase }} | {{ exp.company | uppercase }} {{exp.city}} {{exp.country}}</h3>
+        <p>{{exp.start_date}} {{exp.end_date}}</p>
         <h3>{{exp.title}}</h3>
         <h4>{{exp.company}}</h4>
         <p>{{exp.description}}</p>

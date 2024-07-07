@@ -1,1 +1,7 @@
-<p>foreign-languages works!</p>
+<h1>Idiomas</h1>
+@for( data of languagesData; track data._id){
+    <div class="foreign-languages">
+        <h3>{{data.language}}</h3>
+        <p>{{data.description}}</p>
+    </div>
+}

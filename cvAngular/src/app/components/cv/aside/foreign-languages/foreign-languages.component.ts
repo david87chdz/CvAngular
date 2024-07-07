@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguagesService } from '../../../../services/languages.service';
 
 @Component({
   selector: 'app-foreign-languages',
@@ -8,5 +9,18 @@ import { Component } from '@angular/core';
   styleUrl: './foreign-languages.component.scss'
 })
 export class ForeignLanguagesComponent {
+
+  public languagesData: any;
+
+  constructor(private languagesService: LanguagesService){
+    this.getLanguagesData();
+  }
+
+
+  getLanguagesData(){
+    this.languagesService.getLanguagesData().subscribe((data: any) => {
+      this.languagesData = data;
+    });
+  }
 
 }
