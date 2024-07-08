@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environments } from '../../environments/environments';
+import { Observable } from 'rxjs';
+import { SoftSkill } from '../interfaces/soft-skill';
 
 const apiUrl = environments.apiUrl;
 
@@ -11,7 +13,7 @@ export class SoftSkillsService {
 
   constructor(private http: HttpClient) { }
 
-  getSoftSkillsData(){
-    return this.http.get(`${apiUrl}/softskills`);
+  getSoftSkillsData(): Observable<SoftSkill[]>{
+    return this.http.get<SoftSkill[]>(`${apiUrl}/softskills`);
   }
 }

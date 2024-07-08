@@ -1,22 +1,24 @@
 import { Component } from '@angular/core';
-import { ExperienceService } from '../../../../services/experience.service';
+import { AcademicExperience } from '../../../../interfaces/academic-experience';
+import { CommonModule } from '@angular/common';
+import { AcademicExperienceService } from '../../../../services/academic-experience.service';
 
 @Component({
   selector: 'app-academic-experience',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './academic-experience.component.html',
   styleUrl: './academic-experience.component.scss'
 })
 export class AcademicExperienceComponent {
-  public academicExperiences: any;
+  public academicExperiences: AcademicExperience[] = [];
 
-  constructor(private experienceService: ExperienceService) {
+  constructor(private academicService: AcademicExperienceService) {
     this.getAcademicExperience();
    }
 
   getAcademicExperience() {
-    this.experienceService.getAcademicExperience().subscribe((data) => {
+    this.academicService.getAcademicExperience().subscribe((data) => {
       console.log(data);
       this.academicExperiences = data;
     });

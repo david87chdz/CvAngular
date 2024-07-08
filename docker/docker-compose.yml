@@ -10,6 +10,7 @@ services:
       POSTGRES_DB: cvAngular
     volumes:
       - ./db_data:/var/lib/postgresql/data
+      #- ./ultimo.sql:/docker-entrypoint-initdb.d/ultimo.sql
     ports:
       - "5432:5432"
   

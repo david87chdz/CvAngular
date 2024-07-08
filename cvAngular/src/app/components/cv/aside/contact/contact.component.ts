@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ContactService } from '../../../../services/contact.service';
+import { Contact } from '../../../../interfaces/contact';
 
 @Component({
   selector: 'app-contact',
@@ -9,7 +10,7 @@ import { ContactService } from '../../../../services/contact.service';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  public contactData: any;
+  public contactData: Contact[] = [];
 
   constructor (private contactService: ContactService){
     this.getContactData();

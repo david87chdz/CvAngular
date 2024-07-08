@@ -7,7 +7,7 @@ const AcademicExperience = sequelize.define('academicexperience', {
         primaryKey: true,
         autoIncrement: true
       },
-      tittle: {
+      title: {
         type: DataTypes.STRING,
         allowNull: false
       },

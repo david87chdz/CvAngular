@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SoftSkillsService } from '../../../../services/soft-skills.service';
+import { SoftSkill } from '../../../../interfaces/soft-skill';
 
 @Component({
   selector: 'app-soft-skills',
@@ -9,7 +10,7 @@ import { SoftSkillsService } from '../../../../services/soft-skills.service';
   styleUrl: './soft-skills.component.scss'
 })
 export class SoftSkillsComponent {
-  public softSkillsData: any;
+  public softSkillsData: SoftSkill[] = [];
 
   constructor(private softSkillsService: SoftSkillsService){
     this.getSoftSkillsData();

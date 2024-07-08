@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SkillsService } from '../../../../services/skills.service';
+import { Skill } from '../../../../interfaces/skill';
 
 @Component({
   selector: 'app-skills',
@@ -9,7 +10,7 @@ import { SkillsService } from '../../../../services/skills.service';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
-  public skillsData: any;
+  public skillsData: Skill[] = [];
 
   constructor(private skillsService: SkillsService){
     this.getSkillsData();

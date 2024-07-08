@@ -33,7 +33,7 @@ const WorkExperience = sequelize.define('workexperience', {
       defaultValue: 'Actualidad'
     },
     description: {
-      type: DataTypes.STRING
+      type: DataTypes.TEXT
     }
   }, {
     tableName: 'workexperience',

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { ExperienceService } from '../../../../services/experience.service';
+
 import { CommonModule } from '@angular/common';
+import { WorkExperience } from '../../../../interfaces/work-experience';
+import { WorkExperienceService } from '../../../../services/work-experience.service';
 
 
 @Component({
@@ -12,9 +14,9 @@ import { CommonModule } from '@angular/common';
 })
 export class WorkExperienceComponent {
 
-  public experience: any;
+  public experience: WorkExperience[] = [];
 
-  constructor(private expeinceService$: ExperienceService) {
+  constructor(private expeinceService$: WorkExperienceService) {
     this.getExperience();
   }
 

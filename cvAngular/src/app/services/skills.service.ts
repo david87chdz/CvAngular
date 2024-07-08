@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { environments } from '../../environments/environments';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Skill } from '../interfaces/skill';
 
 const apiUrl = environments.apiUrl;
 
@@ -11,7 +13,7 @@ export class SkillsService {
 
   constructor(private http: HttpClient) { }
 
-  getSkillsData(){
-    return this.http.get(`${apiUrl}/skills`);
+  getSkillsData(): Observable<Skill[]>{
+    return this.http.get<Skill[]>(`${apiUrl}/skills`);
   }
 }
