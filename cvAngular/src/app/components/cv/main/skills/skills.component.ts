@@ -20,6 +20,25 @@ export class SkillsComponent {
   getSkillsData(){
     this.skillsService.getSkillsData().subscribe((data: any) => {
       this.skillsData = data;
+      this.mapSkills(this.skillsData);
+    });
+  }
+
+  mapSkills(skills: Skill[]){
+    return skills.map((skill: Skill) => {
+    
+      if(skill.name === 'Spring boot'){
+        skill.name = 'spring';
+      }else if(skill.name === 'PosTgreSql'){
+        skill.name = 'postgres';
+      } 
+      else{
+        skill.name= skill.name.toLocaleLowerCase();
+      }
+      return {
+        name: skill.name,
+        level: skill.level
+      }
     });
   }
 }
