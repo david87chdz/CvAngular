@@ -1,7 +1,82 @@
-<h1>Habilidades técnicas</h1>
-@for( data of skillsData; track data._id){
-    <div class="skills">
-        <p>{{data.name}}</p>
-        <img src="https://skillicons.dev/icons?i={{data.name}}" alt="{{data.name}}">
+<section class="container">
+    <h1>Habilidades técnicas</h1>
+    <article class="language">
+        <h2>Lenguajes de programación</h2>
+        <div>
+        @for( languaje of languages; track languaje._id){
+                <p>{{languaje.name}}</p>
+                <img src="https://skillicons.dev/icons?i={{languaje.name}}" alt="{{languaje.name}}">
+        }
     </div>
-}
+    </article>
+    <article>
+        <div>
+        <h2>Frameworks y librerías frontend</h2>
+        @for( framework of frontend; track framework._id){
+                <p>{{framework.name}}</p>
+                <img src="https://skillicons.dev/icons?i={{framework.name}}" alt="{{framework.name}}">
+        }
+    </div>
+    </article>
+
+    <article>
+        <div>
+        <h2>Lenguajes de marcado y estilos:</h2>
+        @for( markup of markupLanguages; track markup._id){
+                <p>{{markup.name}}</p>
+                <img src="https://skillicons.dev/icons?i={{markup.name}}" alt="{{markup.name}}">
+        }
+    </div>
+    </article>
+
+    <article>
+        <div>
+        <h2>Frameworks y bibliotecas frontend:</h2>
+        @for(framework of frontend; track framework._id){
+                <p>{{framework.name}}</p>
+                <img src="https://skillicons.dev/icons?i={{framework.name}}" alt="{{framework.name}}">
+        }
+    </div>
+    </article>
+
+    <article>
+        <div>
+        <h2>Tecnologías y frameworks backend:</h2>
+        @for(frameBack of backend; track frameBack._id){
+                <p>{{frameBack.name}}</p>
+                <img src="https://skillicons.dev/icons?i={{frameBack.name}}" alt="{{frameBack.name}}">
+        }
+    </div>
+    </article>
+
+    <article>
+        <div>
+        <h2>Base de datos:</h2>
+        @for(database of databases; track database._id){
+                <p>{{database.name}}</p>
+                <img src="https://skillicons.dev/icons?i={{database.name}}" alt="{{database.name}}">
+        }
+    </div>
+    </article>
+
+    <article>
+        <div>
+        <h2>Control de versiones:</h2>
+        @for(version of versionControl; track version._id){
+                <p>{{version.name}}</p>
+                <img src="https://skillicons.dev/icons?i={{version.name}}" alt="{{version.name}}">
+        }
+    </div>
+    </article>
+
+    <article>
+        <div>
+        <h2>Herramientas de desarrollo:</h2>
+        @for(tool of tools; track tool._id){
+                <p>{{tool.name}}</p>
+                <img src="https://skillicons.dev/icons?i={{tool.name}}" alt="{{tool.name}}">
+        }
+    </div>
+    </article>
+</section>
+
