@@ -1,10 +1,19 @@
 :host{
     background-color: aqua;
     text-align: center;
+    border: 3px red solid;
+    border-radius: 2em;
+    margin: 1em;
 }
 
 .parent-aside {
     display: flex;
     flex-direction: column; /* Si deseas que los elementos se apilen verticalmente */
-    gap: 40px; /* Ajusta el valor según sea necesario */
+     /* Ajusta el valor según sea necesario */
+}
+
+.parent-aside > * {
+    border: 5px green solid;
+    border-radius: 2em;
+    margin: 1em;
 }

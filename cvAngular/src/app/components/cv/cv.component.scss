@@ -4,6 +4,9 @@
     grid-template-rows: auto repeat(4, 1fr); /* 'auto' para la primera fila y '1fr' para las siguientes */
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    border: 5px solid black;
+    border-radius: 2em;
+    overflow: hidden;
 }
     
 .div1 {
@@ -15,3 +18,4 @@
 .div3 {
     grid-area: 2 / 3 / 6 / 6; /* Ocupa desde la segunda fila hasta la quinta, en las últimas tres columnas */
 }
+
