@@ -1,15 +1,10 @@
 :host{
     background-color: aqua;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
 }
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-.div1 { grid-area: 1 / 1 / 3 / 3; }
-.div2 { grid-area: 1 / 3 / 3 / 6; }
+
+.parent-aside {
+    display: flex;
+    flex-direction: column; /* Si deseas que los elementos se apilen verticalmente */
+    gap: 40px; /* Ajusta el valor según sea necesario */
+}

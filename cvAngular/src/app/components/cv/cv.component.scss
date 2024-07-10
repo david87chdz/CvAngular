@@ -1,11 +1,17 @@
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: auto repeat(4, 1fr); /* 'auto' para la primera fila y '1fr' para las siguientes */
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
     
-.div1 { grid-area: 1 / 1 / 2 / 6; }
-.div2 { grid-area: 2 / 1 / 6 / 3; }
-.div3 { grid-area: 2 / 3 / 6 / 6; }
+.div1 {
+    grid-area: 1 / 1 / 2 / 6; /* Ocupa la primera fila y todas las columnas */
+}
+.div2 {
+    grid-area: 2 / 1 / 6 / 3; /* Ocupa desde la segunda fila hasta la quinta, en las primeras dos columnas */
+}
+.div3 {
+    grid-area: 2 / 3 / 6 / 6; /* Ocupa desde la segunda fila hasta la quinta, en las últimas tres columnas */
+}

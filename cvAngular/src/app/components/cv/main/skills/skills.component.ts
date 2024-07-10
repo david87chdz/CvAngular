@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { SkillsService } from '../../../../services/skills.service';
 import { Skill } from '../../../../interfaces/skill';
 import { map } from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss',
 })

@@ -1,82 +1,179 @@
 <section class="container">
-    <h1>Habilidades técnicas</h1>
+    <p class="title">Habilidades técnicas</p>
+    
     <article class="language">
         <h2>Lenguajes de programación</h2>
-        <div>
-        @for( languaje of languages; track languaje._id){
-                <p>{{languaje.name}}</p>
-                <img src="https://skillicons.dev/icons?i={{languaje.name}}" alt="{{languaje.name}}">
-        }
-    </div>
+        <div class="child">
+            @for(languaje of languages; track languaje._id) {
+                <div class="skill">
+                    <p>{{languaje.name | uppercase }}</p>
+                    <img src="https://skillicons.dev/icons?i={{languaje.name}}" alt="{{languaje.name}}">
+                    @if( languaje.level){
+                        <div class="level-container">
+                            <p class="level-text">
+                                {{ languaje.level > 4 ? 'Avanzado' : (languaje.level >= 3 ? 'Intermedio' : 'Principiante') }}
+                            </p>
+                            <div class="level-bar">
+                                <div class="level level-{{languaje.level}}" style="width: {{languaje.level * 20}}%;"></div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
     </article>
+
     <article>
-        <div>
         <h2>Frameworks y librerías frontend</h2>
-        @for( framework of frontend; track framework._id){
-                <p>{{framework.name}}</p>
-                <img src="https://skillicons.dev/icons?i={{framework.name}}" alt="{{framework.name}}">
-        }
-    </div>
+        <div class="child">
+            @for(framework of frontend; track framework._id) {
+                <div class="skill">
+                    <p>{{framework.name | uppercase}}</p>
+                    <img src="https://skillicons.dev/icons?i={{framework.name}}" alt="{{framework.name}}">
+                    @if( framework.level){
+                        <div class="level-container">
+                            <p class="level-text">
+                                {{ framework.level >= 4 ? 'Avanzado' : (framework.level >= 2 ? 'Intermedio' : 'Principiante') }}
+                            </p>
+                            <div class="level-bar">
+                                <div class="level level-{{framework.level}}" style="width: {{framework.level * 20}}%;"></div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
     </article>
 
     <article>
-        <div>
-        <h2>Lenguajes de marcado y estilos:</h2>
-        @for( markup of markupLanguages; track markup._id){
-                <p>{{markup.name}}</p>
-                <img src="https://skillicons.dev/icons?i={{markup.name}}" alt="{{markup.name}}">
-        }
-    </div>
+        <h2>Lenguajes de marcado y estilos</h2>
+        <div class="child">
+            @for(markup of markupLanguages; track markup._id) {
+                <div class="skill">
+                    <p>{{markup.name | uppercase}}</p>
+                    <img src="https://skillicons.dev/icons?i={{markup.name}}" alt="{{markup.name}}">
+                    @if( markup.level){
+                        <div class="level-container">
+                            <p class="level-text">
+                                {{ markup.level >= 4 ? 'Avanzado' : (markup.level >= 2 ? 'Intermedio' : 'Principiante') }}
+                            </p>
+                            <div class="level-bar">
+                                <div class="level level-{{markup.level}}" style="width: {{markup.level * 20}}%;"></div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
     </article>
 
     <article>
-        <div>
-        <h2>Frameworks y bibliotecas frontend:</h2>
-        @for(framework of frontend; track framework._id){
-                <p>{{framework.name}}</p>
-                <img src="https://skillicons.dev/icons?i={{framework.name}}" alt="{{framework.name}}">
-        }
-    </div>
+        <h2>Frameworks y bibliotecas frontend</h2>
+        <div class="child">
+            @for(framework of frontend; track framework._id) {
+                <div class="skill">
+                    <p>{{framework.name | uppercase}}</p>
+                    <img src="https://skillicons.dev/icons?i={{framework.name}}" alt="{{framework.name}}">
+                    @if( framework.level){
+                        <div class="level-container">
+                            <p class="level-text">
+                                {{ framework.level >= 4 ? 'Avanzado' : (framework.level >= 2 ? 'Intermedio' : 'Principiante') }}
+                            </p>
+                            <div class="level-bar">
+                                <div class="level level-{{framework.level}}" style="width: {{framework.level * 20}}%;"></div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
     </article>
 
     <article>
-        <div>
-        <h2>Tecnologías y frameworks backend:</h2>
-        @for(frameBack of backend; track frameBack._id){
-                <p>{{frameBack.name}}</p>
-                <img src="https://skillicons.dev/icons?i={{frameBack.name}}" alt="{{frameBack.name}}">
-        }
-    </div>
+        <h2>Tecnologías y frameworks backend</h2>
+        <div class="child">
+            @for(frameBack of backend; track frameBack._id) {
+                <div class="skill">
+                    <p>{{frameBack.name | uppercase}}</p>
+                    <img src="https://skillicons.dev/icons?i={{frameBack.name}}" alt="{{frameBack.name}}">
+                    @if( frameBack.level){
+                        <div class="level-container">
+                            <p class="level-text">
+                                {{ frameBack.level >= 4 ? 'Avanzado' : (frameBack.level >= 2 ? 'Intermedio' : 'Principiante') }}
+                            </p>
+                            <div class="level-bar">
+                                <div class="level level-{{frameBack.level}}" style="width: {{frameBack.level * 20}}%;"></div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
     </article>
 
     <article>
-        <div>
-        <h2>Base de datos:</h2>
-        @for(database of databases; track database._id){
-                <p>{{database.name}}</p>
-                <img src="https://skillicons.dev/icons?i={{database.name}}" alt="{{database.name}}">
-        }
-    </div>
+        <h2>Base de datos</h2>
+        <div class="child">
+            @for(database of databases; track database._id) {
+                <div class="skill">
+                    <p>{{database.name | uppercase}}</p>
+                    <img src="https://skillicons.dev/icons?i={{database.name}}" alt="{{database.name}}">
+                    @if( database.level){
+                        <div class="level-container">
+                            <p class="level-text">
+                                {{ database.level >= 4 ? 'Avanzado' : (database.level >= 2 ? 'Intermedio' : 'Principiante') }}
+                            </p>
+                            <div class="level-bar">
+                                <div class="level level-{{database.level}}" style="width: {{database.level * 20}}%;"></div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
     </article>
 
     <article>
-        <div>
-        <h2>Control de versiones:</h2>
-        @for(version of versionControl; track version._id){
-                <p>{{version.name}}</p>
-                <img src="https://skillicons.dev/icons?i={{version.name}}" alt="{{version.name}}">
-        }
-    </div>
+        <h2>Control de versiones</h2>
+        <div class="child">
+            @for(version of versionControl; track version._id) {
+                <div class="skill">
+                    <p>{{version.name | uppercase}}</p>
+                    <img src="https://skillicons.dev/icons?i={{version.name}}" alt="{{version.name}}">
+                    @if( version.level){
+                        <div class="level-container">
+                            <p class="level-text">
+                                {{ version.level >= 4 ? 'Avanzado' : (version.level >= 2 ? 'Intermedio' : 'Principiante') }}
+                            </p>
+                            <div class="level-bar">
+                                <div class="level level-{{version.level}}" style="width: {{version.level * 20}}%;"></div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
     </article>
 
     <article>
-        <div>
-        <h2>Herramientas de desarrollo:</h2>
-        @for(tool of tools; track tool._id){
-                <p>{{tool.name}}</p>
-                <img src="https://skillicons.dev/icons?i={{tool.name}}" alt="{{tool.name}}">
-        }
-    </div>
+        <h2>Herramientas de desarrollo</h2>
+        <div class="child">
+            @for(tool of tools; track tool._id) {
+                <div class="skill">
+                    <p>{{tool.name | uppercase}}</p>
+                    <img src="https://skillicons.dev/icons?i={{tool.name}}" alt="{{tool.name}}">
+                    @if( tool.level){
+                        <div class="level-container">
+                            <p class="level-text">
+                                {{ tool.level >= 4 ? 'Avanzado' : (tool.level >= 2 ? 'Intermedio' : 'Principiante') }}
+                            </p>
+                            <div class="level-bar">
+                                <div class="level level-{{tool.level}}" style="width: {{tool.level * 20}}%;"></div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
     </article>
 </section>
-
