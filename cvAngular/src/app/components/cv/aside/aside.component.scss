@@ -1,19 +1,23 @@
 :host{
-    background-color: aqua;
-    text-align: center;
-    border: 3px red solid;
-    border-radius: 2em;
-    margin: 1em;
+    
+  text-align: center;
+  
+  border-radius: 3em;
+  margin: 1em;
 }
 
+/* General styles for parent container */
 .parent-aside {
-    display: flex;
-    flex-direction: column; /* Si deseas que los elementos se apilen verticalmente */
-     /* Ajusta el valor según sea necesario */
+  display: grid;
+  grid-template-columns: 1fr; /* Si quieres que los componentes estén en una sola columna */
+  grid-row-gap: 3em; /* Espacio entre filas */
+  padding: 1em;
 }
 
+/* Styles for individual components */
 .parent-aside > * {
-    border: 5px green solid;
-    border-radius: 2em;
-    margin: 1em;
+  padding: 1em; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+  border-radius: 1em; 
+  background-color: white; 
 }

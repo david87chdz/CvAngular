@@ -2,7 +2,7 @@
     <p class="title">Habilidades técnicas</p>
     
     <article class="language">
-        <h2>Lenguajes de programación</h2>
+        <p class="subtitle-skills">Lenguajes de programación</p>
         <div class="child">
             @for(languaje of languages; track languaje._id) {
                 <div class="skill">
@@ -24,7 +24,7 @@
     </article>
 
     <article>
-        <h2>Frameworks y librerías frontend</h2>
+        <p class="subtitle-skills">Frameworks y librerías frontend</p>
         <div class="child">
             @for(framework of frontend; track framework._id) {
                 <div class="skill">
@@ -46,7 +46,7 @@
     </article>
 
     <article>
-        <h2>Lenguajes de marcado y estilos</h2>
+        <p class="subtitle-skills">Lenguajes de marcado y estilos</p>
         <div class="child">
             @for(markup of markupLanguages; track markup._id) {
                 <div class="skill">
@@ -67,30 +67,10 @@
         </div>
     </article>
 
-    <article>
-        <h2>Frameworks y bibliotecas frontend</h2>
-        <div class="child">
-            @for(framework of frontend; track framework._id) {
-                <div class="skill">
-                    <p>{{framework.name | uppercase}}</p>
-                    <img src="https://skillicons.dev/icons?i={{framework.name}}" alt="{{framework.name}}">
-                    @if( framework.level){
-                        <div class="level-container">
-                            <p class="level-text">
-                                {{ framework.level >= 4 ? 'Avanzado' : (framework.level >= 2 ? 'Intermedio' : 'Principiante') }}
-                            </p>
-                            <div class="level-bar">
-                                <div class="level level-{{framework.level}}" style="width: {{framework.level * 20}}%;"></div>
-                            </div>
-                        </div>
-                    }
-                </div>
-            }
-        </div>
-    </article>
+    
 
     <article>
-        <h2>Tecnologías y frameworks backend</h2>
+        <p class="subtitle-skills">Tecnologías y frameworks backend</p>
         <div class="child">
             @for(frameBack of backend; track frameBack._id) {
                 <div class="skill">
@@ -112,7 +92,7 @@
     </article>
 
     <article>
-        <h2>Base de datos</h2>
+        <p class="subtitle-skills">Base de datos</p>
         <div class="child">
             @for(database of databases; track database._id) {
                 <div class="skill">
@@ -134,7 +114,7 @@
     </article>
 
     <article>
-        <h2>Control de versiones</h2>
+        <p class="subtitle-skills">Control de versiones</p>
         <div class="child">
             @for(version of versionControl; track version._id) {
                 <div class="skill">
@@ -156,7 +136,7 @@
     </article>
 
     <article>
-        <h2>Herramientas de desarrollo</h2>
+        <p class="subtitle-skills">Herramientas de desarrollo</p>
         <div class="child">
             @for(tool of tools; track tool._id) {
                 <div class="skill">

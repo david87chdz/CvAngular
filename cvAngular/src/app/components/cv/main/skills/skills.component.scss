@@ -10,7 +10,7 @@ article {
 .child {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centra los elementos dentro de .child */
+    justify-content: center; 
 }
 
 .skill {
@@ -18,7 +18,7 @@ article {
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    width: 120px; /* Ajusta el ancho según sea necesario */
+    width: 120px; 
 }
 
 .skill img {
@@ -57,21 +57,21 @@ article {
 }
 
 .level-1 {
-    background-color: #ff0000; /* Rojo para principiante */
+    background-color: #ff0000; 
 }
 
 .level-2 {
-    background-color: #ff7f00; /* Naranja para principiante */
+    background-color: #ff7f00; 
 }
 
 .level-3 {
-    background-color: #ffff00; /* Amarillo para intermedio */
+    background-color: #ffff00; 
 }
 
 .level-4 {
-    background-color: #7fff00; /* Verde claro para intermedio */
+    background-color: #7fff00; 
 }
 
 .level-5 {
-    background-color: #00ff00; /* Verde para avanzado */
+    background-color: #00ff00;
 }

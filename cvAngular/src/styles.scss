@@ -1,28 +1,42 @@
 *{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 h1{
-    font-size: 3em;
-    color: blue;
+    font-size: 5em;
+    color: rgba(0, 0, 39, 0.764);
     font-weight: bolder;
 }
 
 h2{
-    font-size: 2em;
-    color: blue;
+    font-size: 3em;
+    color: rgba(0, 0, 114, 0.791);
     font-weight: bolder;
+    
 }
 
 .title{
     font-weight: bolder;
-    font-size: 1.5em;
-
+    font-size: 3em;
     text-transform: uppercase;
-    color: blue
+    color: rgba(24, 85, 170, 0.824)
 }
 
 .subtitle{
     font-weight: bolder;
-    color: blue;
+    font-size: 1.5em;
+    color: rgba(18, 18, 196, 0.632);
+}
+.subtitle-skills
+{
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: rgba(18, 18, 196, 0.632);
+}
+app-root{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 1em;
+    padding: 1em;
 }
