@@ -44,7 +44,7 @@ To run this project locally, follow these steps:
 git clone https://github.com/david87chdz/cvAngular.git
 cd curriculum-vitae
 ```
-###Install Dependencies
+Install Dependencies
 For the Back End:
 ```bash
 cd backend
@@ -76,21 +76,28 @@ To stop the running containers, use:
 ```bash
 docker-compose down
 ````
-###Usage
-Open your browser and go to http://localhost:4200.
-Navigate through the sections to explore the CV details.
-Use the provided buttons to view specific sections of the CV.
-Contributing
+## Usage
+
+1. Open your browser and go to [http://localhost:4200](http://localhost:4200).
+2. Navigate through the sections to explore the CV details.
+3. Use the provided buttons to view specific sections of the CV.
+
+## Contributing
+
 Contributions are welcome! If you have any ideas, suggestions, or improvements, feel free to submit a pull request. Please make sure to follow the project's coding standards and include appropriate tests.
 
-Steps to Contribute
-Fork the repository.
-Create a new branch: git checkout -b feature/your-feature-name.
-Make your changes and commit them: git commit -m 'Add some feature'.
-Push to the branch: git push origin feature/your-feature-name.
-Open a pull request.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+### Steps to Contribute
 
-Contact
-If you have any questions or suggestions about this project, feel free to contact me via Email or on GitHub.
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`.
+3. Make your changes and commit them: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature/your-feature-name`.
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions or suggestions about this project, feel free to contact me via [Email](mailto:david87chdz@gmail.com) or on [GitHub](https://github.com/david87chdz).
